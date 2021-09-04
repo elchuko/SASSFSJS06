@@ -1,0 +1,80 @@
+@import 'variables';
+@import 'colors';
+@import 'hamburger';
+@import 'mixins';
+@import url('./sidebar.css');
+@import url(./grid.css);
+
+@font-face {
+    font-family: Teko;
+    src: url('../fonts/Teko/Teko-Regular.ttf');
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: $background_color;
+    font-family: $font-family;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background_color;
+
+}
+ 
+section{
+    margin: 0 0 5% 8%;
+}
+
+.home-hero{
+    display: flex;
+    justify-content: space-around;
+
+    .text{
+        color: $text_color;
+        display:flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-direction: column;
+        font-size: $ms;
+        width: $text_width;
+    }
+
+    .hero-image{
+        img{
+            height: $img_height;
+            width: $img_width;
+            margin: $img_margin;
+        }
+    }
+}
+
+.projects-section{
+    color: $text_color;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+    font-size: $ms;
+
+    img{
+        padding: 5%;
+    }
+}
+
+.divider-line{
+    height: 10px;
+    background-color: rgb(114, 33, 87);
+    border-radius: 40px;
+    width: 100%;
+}
+
+
+@media (min-width: 320px) and (max-width: 768px){
+    .home-hero{
+        flex-direction: column;
+    }
+}
