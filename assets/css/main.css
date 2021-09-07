@@ -288,9 +288,18 @@ h4 {
 .contact-section {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+.contact-section .download-resume {
+  height: 50%;
+  width: 50%;
 }
 .contact-section #mail-me {
   flex-direction: column;
+}
+.contact-section img {
+  width: 30%;
+  height: 30%;
 }
 
 .divider-line {
