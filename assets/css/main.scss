@@ -3,7 +3,6 @@
 @import 'mixins';
 @import 'grid';
 @import 'sidebar';
-@import url('./topbar.css');
 
 @font-face {
     font-family: Teko;
@@ -34,6 +33,13 @@ section{
         text-decoration: none;
     }
 }
+
+h5{
+    color: $text_color;
+    font-size: $ms;
+    margin: 1% 0 1% 0;
+}
+
 
 h4{
     margin: 0 0 1% 0;
@@ -83,6 +89,7 @@ h4{
 
     img{
         padding: 5%;
+        width: 80%;
     }
 }
 
@@ -122,6 +129,10 @@ h4{
         width: 70%;
         height: 5%;
         border-radius: 10%;
+        p{
+            color: $text_color;
+            font-size: $ms;
+        }
     }
 
     img{
@@ -136,10 +147,7 @@ h4{
         font-size: $s;
     }
 
-    p{
-        color: $text_color;
-        font-size: $ms;
-    }
+    
 }
 
 .contact-section{

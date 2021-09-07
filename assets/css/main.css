@@ -1,6 +1,5 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
-@import url("./topbar.css");
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -28,6 +27,9 @@
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+  .column img {
+    width: 50%;
   }
 }
 .fa-2x {
@@ -184,6 +186,12 @@ section a {
   text-decoration: none;
 }
 
+h5 {
+  color: #e0e2db;
+  font-size: 4vw;
+  margin: 1% 0 1% 0;
+}
+
 h4 {
   margin: 0 0 1% 0;
   text-align: center;
@@ -225,6 +233,7 @@ h4 {
 }
 .projects-section img {
   padding: 5%;
+  width: 80%;
 }
 
 .reviews-section {
@@ -261,6 +270,10 @@ h4 {
   height: 5%;
   border-radius: 10%;
 }
+.reviews-section .review-text p {
+  color: #e0e2db;
+  font-size: 4vw;
+}
 .reviews-section img {
   border-radius: 30%;
   height: 30%;
@@ -270,10 +283,6 @@ h4 {
 .reviews-section h6 {
   color: #e0e2db;
   font-size: 3vw;
-}
-.reviews-section p {
-  color: #e0e2db;
-  font-size: 4vw;
 }
 
 .contact-section {
