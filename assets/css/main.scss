@@ -2,8 +2,9 @@
 @import 'colors';
 @import 'hamburger';
 @import 'mixins';
-@import url('./sidebar.css');
-@import url(./grid.css);
+@import 'grid';
+@import 'sidebar';
+@import url('./topbar.css');
 
 @font-face {
     font-family: Teko;
@@ -27,7 +28,20 @@ nav{
  
 section{
     margin: 0 0 5% 8%;
+
+    a{
+        font-size: $ms;
+        color: $text_color;
+        text-decoration: none;
+    }
 }
+
+h4{
+    margin: 0 0 1% 0;
+    text-align: center;
+    font-size: $s;
+}
+
 
 .home-hero{
     display: flex;
@@ -65,9 +79,19 @@ section{
     }
 }
 
+.contact-section{
+    display: flex;
+    flex-direction: row;
+
+    #mail-me{
+        flex-direction: column;
+    }
+}
+
 .divider-line{
     height: 10px;
     background-color: $divider_color;
+    border-color: $divider_color;
     border-radius: 40px;
     width: 100%;
 }
