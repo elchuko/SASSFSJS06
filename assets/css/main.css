@@ -28,6 +28,9 @@
     flex: 100%;
     max-width: 100%;
   }
+  .column img {
+    width: 50%;
+  }
 }
 .fa-2x {
   font-size: 2em;
@@ -230,6 +233,7 @@ h4 {
 }
 .projects-section img {
   padding: 5%;
+  width: 80%;
 }
 
 .reviews-section {
