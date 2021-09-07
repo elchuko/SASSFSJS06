@@ -153,9 +153,19 @@ h4{
 .contact-section{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+
+    .download-resume{
+        height: 50%;
+        width: 50%;
+    }
 
     #mail-me{
         flex-direction: column;
+    }
+    img{
+        width: 30%;
+        height: 30%;
     }
 }
 
