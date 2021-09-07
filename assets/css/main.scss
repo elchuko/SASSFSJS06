@@ -57,6 +57,14 @@ h4{
         width: $text_width;
     }
 
+    h2{
+        margin: 1% 0 1% 0;
+    }
+
+    h5{
+        margin: 1% 0 1% 0;
+    }
+
     .hero-image{
         img{
             height: $img_height;
@@ -72,7 +80,7 @@ h4{
     justify-content: space-around;
     align-content: center;
     flex-direction: column;
-    font-size: $ms;
+    font-size: $m;
 
     img{
         padding: 5%;
@@ -100,5 +108,9 @@ h4{
 @media (min-width: 320px) and (max-width: 768px){
     .home-hero{
         flex-direction: column;
+    }
+
+    .main-menu{
+        display: none;
     }
 }

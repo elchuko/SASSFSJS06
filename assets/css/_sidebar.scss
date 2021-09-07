@@ -21,8 +21,8 @@ overflow:visible;
 }
 
 .main-menu {
-background:#37474f;
-border-right:1px solid #37474f;
+background:$background_color;
+border-right:1px solid $text_color;
 position:fixed;
 top:0;
 bottom:0;
